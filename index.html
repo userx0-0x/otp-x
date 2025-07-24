@@ -1,9 +1,104 @@
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activation OTP Bypasser</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-<stripe-buy-button
-  buy-button-id="buy_btn_1RoUcDHzo1Bq3LlYRZmfb6ve"
-  publishable-key="pk_live_51RoNn3Hzo1Bq3LlYoxhkEIuUEnFYeFvEWPwi8F8MoFrdJpcDJmyNAIZZqDGxCAsj2lWLTaKXIDjxJw6jX8BSf0oy00fFVHXOvi"
->
-</stripe-buy-button>
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    h1 {
+      color: #222;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    stripe-buy-button {
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .telegram {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #0088cc;
+      text-decoration: none;
+    }
+
+    .telegram:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .telegram-icon {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Activation de l'OTP Bypasser</h1>
+    <p>
+      Le prix de l'activation est de <span class="highlight">600 000 FCFA (≈ 915,69 €)</span>.
+    </p>
+    <p>
+      Une fois le paiement effectué avec succès, le lien de téléchargement sera affiché automatiquement.
+    </p>
+    <p>
+      Si vous préférez payer en <strong>crypto-monnaie</strong> ou <strong>Toncoins</strong>, veuillez nous contacter sur Telegram :
+    </p>
+
+    <a class="telegram" href="https://t.me/userx0_0x" target="_blank">
+      <img class="telegram-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram logo" />
+      @userx0_0x
+    </a>
+
+    <!-- Stripe Buy Button -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <stripe-buy-button
+      buy-button-id="buy_btn_1RoUcDHzo1Bq3LlYRZmfb6ve"
+      publishable-key="pk_live_51RoNn3Hzo1Bq3LlYoxhkEIuUEnFYeFvEWPwi8F8MoFrdJpcDJmyNAIZZqDGxCAsj2lWLTaKXIDjxJw6jX8BSf0oy00fFVHXOvi"
+    ></stripe-buy-button>
+
+    <div class="footer">
+      Pour toute question, contactez-nous via Telegram.
+    </div>
+  </div>
+</body>
+</html>
